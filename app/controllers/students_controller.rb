@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
   def new
     # binding.pry
     @student = Student.new
-    redirect_to students_path(@student)
+    redirect_to new_student_path(@student)
   end
 
   def create
