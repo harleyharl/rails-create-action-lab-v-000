@@ -7,7 +7,7 @@ describe StudentsController do
       it "creates a new student" do
         binding.pry
         expect{
-          post :create, { :first_name => "Sam", :last_name => "Smith" }
+          POST :create, { :first_name => "Sam", :last_name => "Smith" }
         }.to change(Student,:count).by(1)
       end
 
