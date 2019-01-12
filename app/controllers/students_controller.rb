@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   end
 
   def new
-    binding.pry
+    # binding.pry
     @student = Student.new
     redirect_to new_student_path(@student)
   end
